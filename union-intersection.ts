@@ -4,27 +4,27 @@ type CatOrDogOrBoth = Cat | Dog
 type CatAndDog = Cat & Dog
 
 //Cat
-let a: CatOrDogOrBoth = {
+let ah: CatOrDogOrBoth = {
   name: 'Bonkers',
   purrs: true
 }
 
 //Dog
-a = {
+ah = {
   name: 'Domino',
   barks: true,
   wags: true
 }
 
 //둘 다
-a = {
+ah = {
   name: 'Donkers',
   barks: true,
   purrs: true,
   wags: true
 }
 
-let b: CatAndDog = {
+let bb: CatAndDog = {
   name: 'Domino',
   barks: true,
   purrs: true,
