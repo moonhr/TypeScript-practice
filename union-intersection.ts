@@ -30,4 +30,3 @@ let b: CatAndDog = {
   purrs: true,
   wags: true
 }
-
