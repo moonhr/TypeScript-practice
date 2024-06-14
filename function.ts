@@ -18,3 +18,21 @@ let greet4 = (name : string) => 'hello' + name
 
 //함수 생성자 (타스에서 쓰지마라!!!)
 let greet5 = new Function('name', 'return "hello" + name')
+
+//* 선택적 매개변수
+function log(message : string, userId = 'Not signed in'){
+  let time = new Date().toISOString()
+  console.log(time, message, userId)
+}
+log('User clicked in a button','da763be')
+log('User signed out')
+
+//* 기본 매개변수
+type Context = {
+  appId? : string
+  userId? : string
+}
+function logg(message : string, context: Context = {}){
+  let time = new Date().toISOString()
+  console.log(time, message, context.userId)
+}
